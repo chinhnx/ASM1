@@ -1,8 +1,8 @@
 export const menuList = [
-  { id: 1, category: 'Giới thiệu', link: 'http://127.0.0.1:5500/asm/gioithieu.html' },
-  { id: 2, category: 'Sản phẩm', link: 'http://127.0.0.1:5500/asm/sanpham.html' },
-  { id: 3, category: 'Blog', link: 'http://127.0.0.1:5500/asm/blog.html' },
-  { id: 4, category: 'Liên hệ', link: 'http://127.0.0.1:5500/asm/lienhe.html' },
+  { id: 1, category: 'Giới thiệu', link: './gioithieu.html' },
+  { id: 2, category: 'Sản phẩm', link: './sanpham.html' },
+  { id: 3, category: 'Blog', link: './blog.html' },
+  { id: 4, category: 'Liên hệ', link: './lienhe.html' },
 ];
 
 export const listItem = [

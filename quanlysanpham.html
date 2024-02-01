@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sản phẩm</title>
+    <style>
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <!-- Nút để thêm sản phẩm mới -->
+        <button onclick="addProduct()">Thêm sản phẩm</button>
+    </div>
+
+    <!-- Container để chứa sản phẩm -->
+    <div id="productContainer"></div>
+
+    <script>
+        var products = [
+            { id: 1, name: "Sản phẩm 1", price: 100 },
+            { id: 2, name: "Sản phẩm 2", price: 150 },
+            { id: 3, name: "Sản phẩm 3", price: 200 },
+        ];
+
+        var productContainer = document.getElementById("productContainer");
+
+        // Hàm để hiển thị sản phẩm
+        function displayProducts() {
+            // Xóa toàn bộ nội dung của container
+            productContainer.innerHTML = "";
+
+            // Duyệt qua danh sách sản phẩm và hiển thị lên màn hình
+            for (var i = 0; i < products.length; i++) {
+                var product = products[i];
+
+                var productElement = document.createElement("div");
+                productElement.classList.add("product");
+                productElement.innerHTML = "<h2>" + product.name + "</h2><p>Giá: $" + product.price + "</p>";
+
+                // Thêm nút để xóa sản phẩm
+                var deleteButton = document.createElement("button");
+                deleteButton.textContent = "Xóa";
+                deleteButton.onclick = function () {
+                    // Gọi hàm xóa sản phẩm khi nút được nhấn
+                    deleteProduct(product.id);
+                };
+
+                // Thêm nút xóa vào phần tử sản phẩm
+                productElement.appendChild(deleteButton);
+
+                productContainer.appendChild(productElement);
+            }
+        }
+
+        // Hàm để thêm sản phẩm mới
+        function addProduct() {
+            var productName = prompt("Nhập tên sản phẩm:");
+            var productPrice = prompt("Nhập giá sản phẩm:");
+
+            // Kiểm tra nếu người dùng đã nhập thông tin
+            if (productName && productPrice) {
+                var newProduct = {
+                    id: products.length + 1, // Tạo id mới
+                    name: productName,
+                    price: parseFloat(productPrice)
+                };
+                products.push(newProduct);
+
+                // Hiển thị lại danh sách sản phẩm sau khi thêm mới
+                displayProducts();
+            }
+        }
+
+        // Hàm để xóa sản phẩm
+        function deleteProduct(productId) {
+            // Lọc ra sản phẩm cần xóa
+            var productIndex = products.findIndex(function (product) {
+                return product.id === productId;
+            });
+
+            // Kiểm tra xem sản phẩm có tồn tại không
+            if (productIndex !== -1) {
+                // Xóa sản phẩm khỏi mảng
+                products.splice(productIndex, 1);
+
+                // Hiển thị lại danh sách sản phẩm sau khi xóa
+                displayProducts();
+            }
+        }
+
+        // Hiển thị sản phẩm lúc ban đầu
+        displayProducts();
+    </script>
+
+</body>
+
+</html>

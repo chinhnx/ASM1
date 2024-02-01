@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body style="font-family: 'Montserrat', sans-serif">
+    <header>
+      <div
+        class="max-w-[1672px] px-4 m-auto grid grid-cols-3 md:flex md:justify-between py-10 items-center"
+      >
+        <div class="md:flex items-center">
+          <div class="text-center">
+            <a class="flex md:pr-[43px] block items-center" href="">
+              <img class="" src="./img/Group 167241.png" alt="" />
+            </a>
+          </div>
+          <div class="md:block hidden">
+            <ul class="flex justify-evenly">
+              <li class="block">
+                <a href="" class="text-base hover:font-bold font-normal md:pr-6"
+                  >Giới Thiệu</a
+                >
+              </li>
+              <li class="block">
+                <a href="" class="text-base hover:font-bold font-normal md:pr-6"
+                  >Sản Phẩm</a
+                >
+              </li>
+              <li class="block">
+                <a href="" class="text-base hover:font-bold font-normal md:pr-6"
+                  >Blog</a
+                >
+              </li>
+              <li class="block">
+                <a href="" class="text-base hover:font-bold font-normal md:pr-6"
+                  >Liên hệ</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="md:hidden order-first">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+        <div class="md:hidden">
+          <button class="float-right">
+            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+          </button>
+        </div>
+        <div class="">
+          <div class="hidden md:flex items-center justify-evenly">
+            <form class="bg-[#E3E3E3] rounded-[21.5px] py-2 px-4" action="">
+              <div class="flex">
+                <input
+                  class="outline-none bg-[#E3E3E3] placeholder-[#828282] items-center"
+                  type="search"
+                  name=""
+                  id=""
+                  placeholder="Tìm kiếm"
+                />
+                <div class="items-center">
+                  <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+            <ul class="flex">
+              <li class="block pl-8">
+                <a href="">
+                  <i class="fa-regular fa-heart fa-xl"></i>
+                </a>
+              </li>
+              <li class="block pl-8">
+                <a href="" class=""
+                  ><i class="fa-regular fa-circle-user fa-xl"></i
+                ></a>
+              </li>
+              <li class="block pl-8">
+                <a href=""><i class="fa-solid fa-lock fa-xl"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="max-w-[1532px] pt-[80px] px-4 m-auto">
+        <div class="grid md:grid-cols-2 gap-[154px]">
+          <div>
+            <div class="pb-5">
+              <h2 class="text-3xl font-bold">Đăng nhập</h2>
+            </div>
+            <div class="border-b border-[#BABABA]">
+              <form action="">
+                <div class="grid grid-cols-1 gap-[10px]">
+                  <input
+                    class="border-[#BABABA] border-[1px] rounded-[4px] py-[14px] pl-6 placeholder:text-black"
+                    type="email"
+                    placeholder="Email*"
+                    required
+                    name=""
+                    id=""
+                  />
+
+                  <input
+                    class="border-[#BABABA] border-[1px] rounded-[4px] py-[14px] pl-6 placeholder:text-black"
+                    type="password"
+                    placeholder="Mật khẩu*"
+                    required
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div class="pt-[20px] pb-[40px]">
+                  <div class="flex">
+                    <input
+                      class="mr-[12px]"
+                      type="radio"
+                      name=""
+                      id="remember"
+                    />
+                    <label class="self-center block" for="remember"
+                      >Ghi nhớ đăng nhập</label
+                    >
+                  </div>
+                </div>
+                <div class="grid grid-cols-[1fr,0.6fr] gap-5 pb-[31px]">
+                  <div>
+                    <button
+                      class="block py-[17px] text-[14px] w-[100%] bg-black text-white hover:bg-purple-700"
+                      type="submit"
+                    >
+                      Đăng Nhập
+                    </button>
+                  </div>
+                  <div class="self-center">
+                    <p class="text-[14px]">
+                      Quên mật khẩu?
+                      <span
+                        ><a class="underline hover:text-red-500" href=""
+                          >Click vào đây!</a
+                        ></span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="py-5">
+              <p>Hoặc đăng nhập bằng</p>
+            </div>
+            <div class="bg-[#3B5998] self-center hover:bg-purple-700">
+              <a
+                class="flex text-white items-center justify-center py-[17px]"
+                href=""
+              >
+                <i
+                  class="fa-brands fa-facebook-f pr-[11px]"
+                  style="color: #ffffff"
+                ></i>
+                <p class="text-[14px]">Tài khoản Facebook</p>
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="">
+              <h2 class="text-3xl font-bold">TẠO TÀI KHOẢN</h2>
+            </div>
+            <div>
+              <form action="">
+                <div
+                  class="grid grid-cols-1 gap-[10px] border-b border-[#BABABA] py-5"
+                >
+                  <input
+                    required
+                    type="text"
+                    class="border-[#BABABA] border-[1px] rounded-[4px] py-[14px] pl-6 placeholder:text-black"
+                    placeholder="Họ và tên*"
+                    name=""
+                    id=""
+                  />
+                  <input
+                    required
+                    type="email"
+                    class="border-[#BABABA] border-[1px] rounded-[4px] py-[14px] pl-6 placeholder:text-black"
+                    placeholder="Email*"
+                    name=""
+                    id=""
+                  />
+                  <input
+                    required
+                    class="border-[#BABABA] border-[1px] rounded-[4px] py-[14px] pl-6 placeholder:text-black"
+                    type="password"
+                    placeholder="Mật khẩu*"
+                    name=""
+                    id=""
+                  />
+                  <input
+                    required
+                    class="border-[#BABABA] border-[1px] rounded-[4px] py-[14px] pl-6 placeholder:text-black"
+                    type="password"
+                    placeholder="Nhập lại mật khẩu*"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div class="grid grid-cols-[1fr,0.5fr] gap-2 py-5">
+                  <button
+                    class="block py-[17px] text-[14px] w-[100%] bg-black text-white hover:bg-purple-700"
+                    type="submit"
+                  >
+                    Đăng Ký
+                  </button>
+                  <a
+                    class="text-center self-center py-[17px] border-[#BABABA] border-[1px] hover:bg-purple-700 hover:text-white"
+                    href=""
+                    >Quay về trang chủ</a
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="= flex justify-end fixed right-3">
+        <img class="" src="./Group 164119.png" alt="" />
+      </div>
+    </section>
+
+    <section class="md:pt-[380px]">
+      <div class="max-w-[1672px] px-4 m-auto pt-[60px] pb-[40px]">
+        <div class="grid grid-cols-6 gap-[2px]">
+          <div class="div">
+            <img class="pb-4" src="./Group 2467.png" alt="" />
+            <img src="./IKAY Concept.png" alt="" />
+          </div>
+          <div class="grid gap-[80px]">
+            <div>
+              <h3 class="text-[14px] font-semibold pb-2">IKAY Concept</h3>
+              <ul class="text-[14px] leading-[24px]">
+                <li class="block">
+                  <a class="hover:font-bold" href="">Sản phẩm</a>
+                </li>
+                <li class="block">
+                  <a class="hover:font-bold" href="">Giới thiệu</a>
+                </li>
+                <li class="block">
+                  <a class="hover:font-bold" href="">Blog</a>
+                </li>
+                <li class="block">
+                  <a class="hover:font-bold" href="">Liên hệ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="">
+              <select
+                class="block w-full py-3 pl-[48px] pr-[55px] border-solid border-black border-[0.5px] rounded-[25px]"
+                name=""
+                id=""
+              >
+                <option value="">VN(VN)</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-[14px] font-semibold">IKAY Group</h3>
+            <ul class="text-[14px] leading-[24px]">
+              <li class="block">
+                <a class="hover:font-bold" href="">Dự án</a>
+              </li>
+              <li class="block">
+                <a class="hover:font-bold" href="">Ứng dụng</a>
+              </li>
+              <li class="block">
+                <a class="hover:font-bold" href="">Tin tức</a>
+              </li>
+              <li class="block">
+                <a class="hover:font-bold" href="">Tuyển dụng</a>
+              </li>
+              <li class="block">
+                <a class="hover:font-bold" href="">Giới thiệu</a>
+              </li>
+              <li class="block">
+                <a class="hover:font-bold" href="">Liên hệ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="">
+            <div>
+              <h3 class="text-[14px] font-semibold">America</h3>
+              <p class="text-[14px]">
+                15612 Coolidge Ave, Silver Spring, MD 20906 USA
+              </p>
+            </div>
+            <div class="py-6">
+              <h3 class="text-[14px] font-semibold">Hà Nội</h3>
+              <p class="text-[14px]">
+                Shophouse số 4NV4B- 18, khu đô thị The Manor Central Park, đường
+                Nguyễn Xiển, Hà Nội
+              </p>
+            </div>
+            <div>
+              <h3 class="text-[14px] font-semibold">Đà Nẵng</h3>
+              <p class="text-[14px]">
+                223 Đ. Trần Phú, Phước Ninh, TP, Đà Nẵng
+              </p>
+            </div>
+          </div>
+          <div class="">
+            <div class="pb-6">
+              <h3 class="text-[14px] font-semibold">HCM</h3>
+              <p class="text-[14px]">
+                Số 25 đường 69 TML, Phường Thạnh Mỹ Lợi, Q2 Thành Phố Hồ Chí
+                Minh
+              </p>
+            </div>
+            <div>
+              <h3 class="text-[14px] font-semibold">Hưng Yên</h3>
+              <p class="text-[14px]">
+                Đường Vũ Văn Cẩn, Phường Bần Yên Nhân, Thị Xã Mỹ Hào, Tỉnh Hưng
+                Yên, Việt Nam
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="pb-[52px]">
+              <h3 class="text-[14px] font-semibold">Điện thoại</h3>
+              <p class="text-[14px]">0867 607 551</p>
+            </div>
+            <div class="">
+              <h3 class="text-[14px] font-semibold">Mở cửa:</h3>
+              <p class="text-[14px]">Thứ 2- Thứ 7 08:00 – 18:00</p>
+            </div>
+            <div class="pt-[64px]">
+              <a
+                class="font-semibold bg-[#D3A455] text-white py-[17px] rounded-[28px] block text-center hover:bg-purple-700"
+                href=""
+                >Tư vấn qua điện thoại</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="max-w-[1672px] px-4 m-auto pb-[90px]">
+        <div class="grid grid-cols-6 gap-[2px] py-6">
+          <div>
+            <p>© 2020 IKAY Group</p>
+          </div>
+          <div class="col-span-2">
+            <ul class="flex">
+              <li class="block pr-5">
+                <a href=""><i class="fa-brands fa-tiktok fa-xl"></i></a>
+              </li>
+              <li class="block pr-5">
+                <a href=""><i class="fa-brands fa-twitter fa-xl"></i></a>
+              </li>
+              <li class="block pr-5">
+                <a href=""><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+              </li>
+              <li class="block">
+                <a href=""><i class="fa-solid fa-earth-asia fa-xl"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-[14px hover:font-bold">Hướng dẫn mua hàng</p>
+          </div>
+          <div>
+            <p class="text-[14px] hover:font-bold">Chính sách đổi trả</p>
+          </div>
+          <div>
+            <p class="text-[14px] hover:font-bold">Câu hỏi thường gặp</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

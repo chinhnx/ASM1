@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body style="font-family: 'Montserrat', sans-serif">
+    <header>
+      <div
+        class="max-w-[1672px] px-4 m-auto grid grid-cols-3 xl:flex xl:justify-between py-10 items-center"
+      >
+        <div class="xl:flex items-center">
+          <div class="text-center">
+            <a
+              class="flex xl:pr-[43px] justify-center block items-center"
+              href=""
+            >
+              <img class="" src="./img/Group 167241.png" alt="" />
+            </a>
+          </div>
+          <div class="xl:block hidden">
+            <ul class="flex justify-evenly">
+              <li class="block">
+                <a href="" class="text-base hover:font-bold font-normal md:pr-6"
+                  >Giới Thiệu</a
+                >
+              </li>
+              <li class="block">
+                <a
+                  href="http://127.0.0.1:5500/sanpham.html"
+                  class="text-base hover:font-bold font-normal md:pr-6"
+                  >Sản Phẩm</a
+                >
+              </li>
+              <li class="block">
+                <a href="" class="text-base hover:font-bold font-normal md:pr-6"
+                  >Blog</a
+                >
+              </li>
+              <li class="block">
+                <a href="" class="text-base hover:font-bold font-normal md:pr-6"
+                  >Liên hệ</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="xl:hidden order-first">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+        <div class="xl:hidden">
+          <button class="float-right">
+            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+          </button>
+        </div>
+        <div class="">
+          <div class="hidden xl:flex items-center justify-evenly">
+            <form class="bg-[#E3E3E3] rounded-[21.5px] py-2 px-4" action="">
+              <div class="flex">
+                <input
+                  class="outline-none bg-[#E3E3E3] placeholder-[#828282] items-center"
+                  type="search"
+                  name=""
+                  id=""
+                  placeholder="Tìm kiếm"
+                />
+                <div class="items-center">
+                  <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+            <ul class="flex">
+              <li class="block pl-8">
+                <a href="">
+                  <i class="fa-regular fa-heart fa-xl"></i>
+                </a>
+              </li>
+              <li class="block pl-8">
+                <a href="" class=""
+                  ><i class="fa-regular fa-circle-user fa-xl"></i
+                ></a>
+              </li>
+              <li class="block pl-8">
+                <a href=""><i class="fa-solid fa-lock fa-xl"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="max-w-[1672px] m-auto px-4 pt-5">
+        <ul class="flex">
+          <li class="block pr-1"><a href="">Trang chủ</a></li>
+          <li class="block pr-1">/</li>
+          <li class="block pr-1"><a href="">Romanesque Concept</a></li>
+          <li class="block pr-1">/</li>
+          <li class="block pr-1"><a href="">Phòng khách</a></li>
+          <li class="block pr-1">/</li>
+          <li class="block font-bold"><a href="">Princeton chair</a></li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <div class="max-w-[1672px] m-auto px-4">
+        <div class="xl:relative py-6 xl:py-0">
+          <div
+            class="text-center xl:text-left xl:absolute xl:top-[72px] xl:left-[278px]"
+          >
+            <a
+              class="border border-solid border-[1px] text-[#73726E] py-1 px-2 hover:text-white hover:bg-black"
+              href=""
+              >Sản phẩm mới</a
+            >
+            <h3 class="font-semibold">Princeton chair</h3>
+            <p>Ghế ăn, ghế làm việc, 51 x 59.5 x 76cm</p>
+            <p>Giá chỉ từ: <span class="font-semibold"> 4,270,000đ</span></p>
+          </div>
+          <img
+            class="block m-auto pt-[72px]"
+            src="./img/2019519 1.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="max-w-[1672px] m-auto px-4">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper pb-5">
+            <div class="swiper-slide">
+              <div class="pb-[56px] float-right">
+                <i class="fa-regular fa-heart fa-xl"></i>
+              </div>
+              <div>
+                <img src="./img/1.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pb-[56px] float-right">
+                <i class="fa-regular fa-heart fa-xl"></i>
+              </div>
+              <div>
+                <img src="./img/1.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pb-[56px] float-right">
+                <i class="fa-regular fa-heart fa-xl"></i>
+              </div>
+              <div>
+                <img src="./img/1.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pb-[56px] float-right">
+                <i class="fa-regular fa-heart fa-xl"></i>
+              </div>
+              <div>
+                <img src="./img/1.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pb-[56px] float-right">
+                <i class="fa-regular fa-heart fa-xl"></i>
+              </div>
+              <div>
+                <img src="./img/1.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pb-[56px] float-right">
+                <i class="fa-regular fa-heart fa-xl"></i>
+              </div>
+              <div>
+                <img src="./img/1.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pb-[56px] float-right">
+                <i class="fa-regular fa-heart fa-xl"></i>
+              </div>
+              <div>
+                <img src="./img/1.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pb-[56px] float-right">
+                <i class="fa-regular fa-heart fa-xl"></i>
+              </div>
+              <div>
+                <img src="./img/1.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pb-[56px] float-right">
+                <i class="fa-regular fa-heart fa-xl"></i>
+              </div>
+              <div>
+                <img src="./img/1.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="max-w-[514px] px-4 m-auto border-[#BABABA] py-[105px]">
+        <p class="text-xl text-center pb-5">
+          Giá chỉ từ: <span class="font-semibold"> 60,270,000đ</span>
+        </p>
+        <div class="pb-5">
+          <p class="pb-3">Số lượng</p>
+          <select
+            class="w-[100%] py-[14px] pl-[14px] pr-[14px] border-solid border-[#BABABA] border-[1px] text-[#BABABA]"
+            name=""
+            id=""
+          >
+            <option class="" value="">1 Ghế Princeton Chair</option>
+            <option value="">2 Ghế Princeton Chair</option>
+            <option value="">3 Ghế Princeton Chair</option>
+          </select>
+        </div>
+        <div class="grid grid-cols-[60px,1fr] gap-2">
+          <div class="border-solid border-black border-[1px] text-center">
+            <p class="pt-4"><i class="fa-regular fa-heart fa-xl"></i></p>
+          </div>
+          <div
+            class="text-center self-center bg-black text-white py-4 hover:text-white hover:bg-purple-700"
+          >
+            <p><a href="">Thêm vào giỏ</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="max-w-[1672px] px-4 m-auto border-t-1">
+        <h2 class="text-[30px] font-semibold">
+          Nốt trầm ẩn sau không gian tĩnh lặng
+        </h2>
+        <div class="grid grid-cols-[2fr,1fr]">
+          <div></div>
+          <div>
+            <img src="./img/Layer 1 1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4.5,
+        spaceBetween: 20,
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: true,
+        },
+      });
+    </script>
+  </body>
+</html>
+l
